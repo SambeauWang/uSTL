@@ -193,4 +193,51 @@ __STL_TEMPLATE_NULL struct __type_traits<const unsigned char*> {
 	typedef __true_type    is_POD_type;
 };
 
+// The following could be written in terms of numeric_limits.  
+// We're doing it separately to reduce the number of dependencies.
+
+template <class _Tp> struct _uIs_integer {
+	typedef __false_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<bool> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<char> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<signed char> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<unsigned char> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<short> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<unsigned short> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<int> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<unsigned int> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<long> {
+	typedef __true_type _Integral;
+};
+
+__STL_TEMPLATE_NULL struct _uIs_integer<unsigned long> {
+	typedef __true_type _Integral;
+};
+
 # endif

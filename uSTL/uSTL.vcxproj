@@ -72,6 +72,7 @@
     <ClInclude Include="ustl_config.h" />
     <ClInclude Include="ustl_construct.h" />
     <ClInclude Include="ustl_iterator_base.h" />
+    <ClInclude Include="ustl_list.h" />
     <ClInclude Include="ustl_pair.h" />
     <ClInclude Include="ustl_uninitialized.h" />
     <ClInclude Include="ustl_vector.h" />

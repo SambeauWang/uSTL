@@ -50,5 +50,8 @@
     <ClInclude Include="ustl_pair.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ustl_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
