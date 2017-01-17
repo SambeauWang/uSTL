@@ -65,6 +65,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ustl_tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ustl_algobase.h" />
